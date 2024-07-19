@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Protofolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a05dde8f52.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo.png" class="logo">
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#conatct">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>WEB DEVELOPER</p>
+                <h1>Hi, I am <span>Athish</span><br>From Banglore </h1>
+            </div>
+        </div>
+
+    </div>
+
+ 
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="user.jpg" width="500" height="600">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hi My name is Athish JR and i am currently studying in Dayananda Sagar University in Bnaglore , Karnataka
+                        pursuing Bachelor of Computer Application (BCA) and i am in 5th Semester Right now. Here is my Personal Protofolio
+                        with all my credentials and details. I Completed my 10th standard in Sri Chaitanya Techno School. and I completed my 
+                        12th standard in Sri Chaitanya Pu College. And now i am completeing my post graduate.
+                        Thank you
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Soft-skills')">Soft-Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Soft-skills">
+                        <ul>
+                            <li><span>Communication</span><br>Proficiency in English and Good Communication Skills</li>
+                            <li><span>Task Managing</span><br>Excellent in Managing Multiple tasks and Performing it</li>
+                            <li><span>Project lead</span><br>Expert in Leading a team And handling the tasks</li>
+                            <li><span>Sportsman</span><br>Good Sportmanship In Cricket, Volleyball, Basketball</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022 - Current</span><br>Dayananda Sagar University (BCA) Bachelor of Computer Applications</li>
+                            <li><span>2022</span><br>12th standard (CBSE) Sri Chaitamya Pu College</li>
+                            <li><span>2020</span><br>10th standard (CBSE) Sri Chaitamya Techno School</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+ <div id="skills">
+    <div class="container">
+        <h1 class="sub-title">My Skills</h1>
+        <div class="skills-list">
+        <div> 
+           <i class="fa-solid fa-code"></i>
+           <h2>Web Design or Development</h2>
+           <br><p>I am intermediate in web design or development by knowing Html, Css, Javascript(basics)</p></br>
+        </div>
+
+        <div> 
+            <i class="fa-brands fa-python"></i>
+            <h2>Python Programming</h2>
+          <br> <p>I am Beginner in Python Programming by knowing Basic Coding Skills</p></br>
+        </div>
+        
+        <div> 
+            <i class="fa-brands fa-java"></i>
+            <h2>Java Programming</h2>
+           <br><p>I am Beginner in Java Programming by knowing Basic Coding Skills</p></br>
+        </div>
+
+        </div>
+
+
+    </div>
+
+   
+     <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="work-1.png" width="150" height="600">
+                    <div class="layer">
+                        <h3>Hosptial Web Page</h3>
+                        <p>The web page helps you too book an appointment and book beds in hopsital.
+                           <br> and talk to doctors on video conference for suggestions</br>
+                        </p>
+                        <a href="#"><i class="fa-regular fa-hospital"></i></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+ </div>
+ 
+
+ <div id="conatct">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-phone"></i>athishjr3@gmail.com</p>
+                <p><i class="fa-sharp fa-solid fa-paper-plane"></i>9880377398</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/athish-j-r-09462a269/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/athish-j-r-09462a269/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/athishjr"><i class="fa-brands fa-github"></i></a>
+
+                </div>
+                <a href="resume.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Yourname" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Athish. Made by Athish</p>
+    </div>
+ </div>
+ 
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link")
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+
+
+
+
+    </script>
+    
+</body>
+</html>
